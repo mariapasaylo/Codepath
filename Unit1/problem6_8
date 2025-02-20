@@ -1,0 +1,45 @@
+def classify_age(age):
+    if age < 18:
+        return "child"
+    else:
+        return "adult"
+    
+print(classify_age(12))
+output = classify_age(18)
+print(output)
+output = classify_age(7)
+print(output)
+output = classify_age(50)
+print(output)
+def what_time_is_it(hour):
+    if hour == 2:
+        return "taco time 🌮"
+    elif hour == 12:
+        return "peanut butter jelly time 🥪"
+    else:
+        return "nap time 😴"
+    
+time = what_time_is_it(2)
+print(time)
+time = what_time_is_it(7)
+print(time)
+time = what_time_is_it(12)
+print(time)
+def blackjack(score):
+    if score == 21:
+        return "Blackjack!"
+    elif score > 21:
+        return "Bust!"
+    elif score >= 17 :
+        return "Nice hand!"
+    else:
+        return "Hit me!"
+    
+blackjack(24)
+print(blackjack(24))
+blackjack(19)
+print(blackjack(19))
+blackjack(21)
+print(blackjack(21))
+blackjack(10)
+print(blackjack(10))
