@@ -1,0 +1,23 @@
+#U
+# list of integers 
+# returns an integer 
+
+#P
+# Sort the list from smallest to largest
+# store the first element in num_small
+# store the last element in num_large
+# difference = num_large - num_small
+# return difference
+
+#I
+def max_difference(lst):
+    lst.sort()
+    num_small = lst[0]
+    num_large = lst[-1]
+    difference = num_large - num_small
+    return difference
+
+
+#T 
+lst = [5,22,8,10,2]
+print(max_difference(lst))

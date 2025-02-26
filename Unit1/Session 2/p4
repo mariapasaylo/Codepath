@@ -1,0 +1,23 @@
+#U
+# List of integers
+# return new list where each element was multiplied by -1
+
+
+#P
+# create a new list 
+# iterate through the list of integers 
+## multiply each number in the original list by -1 
+## append the number to the new list 
+# return the new list 
+
+#I
+def flip_sign(lst):
+    result = []
+    for i in lst:
+        result.append(i * -1)
+    return result
+
+#test
+lst = [1,-2,-3,4]
+print(flip_sign(lst))
+

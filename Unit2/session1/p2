@@ -1,0 +1,29 @@
+
+#U
+#We will create a function called create_dictionary()
+#Our input is two lists called keys and values
+#We will be creating our own dictionary 
+#Th
+# where each list in key will be paired 
+
+
+#P
+#create dictionary
+# Iterate through keys
+## Iterate through values
+### add key value pair to dictionary
+#return dictionary
+
+#I
+def create_dictionary(keys, values):
+    d = {}
+    for i,j in zip(keys,values):
+        d.update({i : j})  #I think this is how we update (oh cool :) I didn't know about that)
+    return d
+    
+
+keys = ["peanut", "dragon", "star"]
+values = ["butter", "fly", "fish"]
+
+print(create_dictionary(keys,values))
+
