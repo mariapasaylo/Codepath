@@ -1,0 +1,16 @@
+class TreeNode:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+left = TreeNode(4)
+root = TreeNode(10,TreeNode(4, None, None), TreeNode(6, None,None))
+
+#All trees are ll but not all ll are trees
+print(root.val)
+print(root.left.val)
+print(root.right.val)
+print(root.left.left.val)
+
+

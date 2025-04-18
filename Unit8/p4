@@ -1,0 +1,20 @@
+class TreeNode:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def left_most(root):
+	#base case
+    #just root
+    if root.left is None:
+        return root.val
+    
+    while root.left:
+        return root.left.val
+
+root = TreeNode(10,TreeNode(4, None, None), TreeNode(6, None,None))
+
+print(left_most(root))
+
+#I get 4 when I run it. Thank you for finishing it:))

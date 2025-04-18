@@ -1,0 +1,15 @@
+
+
+class TreeNode:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def check_tree(root):
+    return root.left.val + root.right.val == root.val
+
+#Time complexity O(3) but overall O(1) 
+root = TreeNode(10,TreeNode(4, None, None), TreeNode(6, None,None))
+
+print(check_tree(root))
